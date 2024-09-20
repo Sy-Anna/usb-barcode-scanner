@@ -1,0 +1,36 @@
+{
+  "name": "usb-barcode-scanner",
+  "version": "1.0.2",
+  "description": "A typed library for using USB barcode scanners in Node.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/mikerovers/typescript-usb-barcode-scanner",
+  "author": "Mike Rovers",
+  "license": "MIT",
+  "homepage": "https://github.com/mikerovers/usb-barcode-scanner#readme",
+  "keywords": [
+    "node",
+    "usb",
+    "barcode",
+    "scanner",
+    "hid"
+  ],
+  "bugs": {
+    "url": "https://github.com/mikerovers/usb-barcode-scanner/issues"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.108",
+    "@types/node-hid": "^1.3.4",
+    "lodash": "^4.17.10",
+    "node-hid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.6",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run clean && tsc -p .",
+    "clean": "rm -rf dist"
+  }
+}
