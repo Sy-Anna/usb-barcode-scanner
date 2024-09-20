@@ -30,7 +30,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "npm run clean && tsc -p .",
+    "build": "tsc -p .",
     "clean": "rm -rf dist"
   }
 }
